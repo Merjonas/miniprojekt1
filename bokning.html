@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boka pass - Pulse träningsstudio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="images/pulse-icon.png">
+</head>
+
+<body>
+
+    <header>
+        <img src="images/pulse-logo.png">
+
+        <nav>
+            <a href="index.html">Hem</a>
+            <a href="schema.html">Schema</a>
+            <a href="medlemskap.html">Medlemskap</a>
+            <a href="bokning.html">Boka pass</a>
+        </nav>
+    </header>
+
+    <main class="bokning">
+        <h1>Boka ett pass</h1>
+
+        <form>
+
+            <label for="namn">Namn</label>
+            <input type="text" id="namn" name="namn" placeholder="Ditt namn">
+
+            <label for="email">E-post</label>
+            <input type="email" id="email" name="email" placeholder="din@email">
+
+            <label for="pass">Välj pass</label>
+            <select id="pass" name="pass">
+                <option value="">Välj ett pass</option>
+                <option value="Yoga">Yoga</option>
+                <option value="Zumba">Zumba</option>
+                <option value="HIIT">HIIT</option>
+                <option value="Spinning">Spinning</option>
+                <option value="Bodypump">Bodypump</option>
+            </select>
+
+            <label for="datum">Datum</label>
+            <input type="date" id="datum" name="datum">
+
+            <label for="tid">Tid</label>
+            <select id="tid" name="tid">
+                <option value="">Välj tid</option>
+                <option value="07:00">07:00</option>
+                <option value="17:30">17:30</option>
+                <option value="07:30">07:30</option>
+                <option value="16:00">16:00</option>
+                <option value="08:00">08:00</option>
+                <option value="10:00">10:00</option>
+
+            </select>
+
+            <button type="submit">Boka pass</button>
+            
+        </form>
+    </main>
+    
+</body>
+</html>
